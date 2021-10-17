@@ -98,6 +98,8 @@ h1 {
 }
 
 .mainImg {
+  width: 550px;
+  height: 100%;
   animation: slideLeft 1s;
 }
 
@@ -123,7 +125,6 @@ h1 {
 .projects {
   height: 100vh;
   color: #1641b6;
-
 }
 
 .projectsInner {
@@ -196,12 +197,12 @@ h1 {
   }
 }
 
-.isShowBtn{
+.isShowBtn {
   opacity: 1;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.isShowBtnHide{
+.isShowBtnHide {
   opacity: 0;
-  transition: all .5s;
+  transition: all 0.5s;
 }
