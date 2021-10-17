@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Нурлан Керимкулов</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="headerInner">
+          <div class="logo">
+            <div>
+              <h3>Керимкулов Нурлан</h3>
+            </div>
+          </div>
+          <ul class="nav">
+            <li onclick="scrollMain()">Главная</li>
+            <li onclick="scrollProjects()">Что он сделал?</li>
+            <li onclick="scrollProgram()">Моя программа</li>
+            <li onclick="scrollReviews()">Отзывы</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="isShowBtn isShowBtnHide">
+        <div class="arrow" onclick="scrollUp()"></div>
+      </div>
+      <div class="container">
+        <div class="mainInner">
+          <div class="mainImg">
+            <img
+              src="http://st-1.akipress.org/st_runews//.storage/runews18/images/.thumbs/999b01d9ba772a4d931d34c25191f1ad_0_500_0.jpg"
+              alt=""
+            />
+          </div>
+          <div class="mainText">
+            <h1>Кандидат Жогорку Кеңеша</h1>
+            <h2>
+              Керимкулов Нурлан <br />
+              Бейшенбекович
+            </h2>
+          </div>
+          <ArrowUp />
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <div class="container">
+        <div class="projectsInner}">
+          <h1>Что он сделал?</h1>
+          <br />
+          <hr />
+        </div>
+      </div>
+    </div>
+    <div class="program">
+      <div class="container">
+        <div class="programInner">
+          <h1>Моя программа</h1>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
