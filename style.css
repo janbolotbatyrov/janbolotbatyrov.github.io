@@ -15,7 +15,7 @@ h1 {
   margin: 0;
   padding: 0;
 }
-.hamburger-menu{
+.hamburger-menu {
   display: none;
 }
 .mobTitle {
@@ -79,7 +79,7 @@ h1 {
   font-size: 20px;
   font-weight: 600;
 }
-.menuMain{
+.menuMain {
   margin-left: 20px;
 }
 .menu__item:hover {
@@ -155,7 +155,7 @@ h1 {
 
 .main {
   margin-top: 120px;
-  height: 90vh;
+  margin-bottom: 100px;
 }
 
 .mainInner {
@@ -208,7 +208,7 @@ h1 {
   }
 }
 .projects {
-  height: 100vh;
+  margin-bottom: 550px;
   color: #1641b6;
 }
 
@@ -217,11 +217,10 @@ h1 {
 
 .projectsInner h1 {
   color: #1641b6;
-  font-size: 40px;
 }
 .program {
-  height: 100vh;
   color: #1641b6;
+  margin-bottom: 550px;
 }
 
 .slideLeftHide {
@@ -322,10 +321,11 @@ h1 {
 
 @media all and (max-width: 426px) {
   .container {
-  width: 400px;
+    width: 400px;
   }
   .main {
     margin-top: 90px;
+
   }
   .mainInner {
     display: inline-block;
@@ -375,7 +375,7 @@ h1 {
     font-size: 26px;
     text-align: center;
   }
-  .hamburger-menu{
+  .hamburger-menu {
     display: block;
   }
 }
