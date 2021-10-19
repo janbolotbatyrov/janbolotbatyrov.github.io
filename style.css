@@ -15,6 +15,91 @@ h1 {
   margin: 0;
   padding: 0;
 }
+.hamburger-menu{
+  display: none;
+}
+.mobTitle {
+  display: none;
+  color: #1641b6;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center; /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100px;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+/* элементы меню */
+.menu__item {
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.menuMain{
+  margin-left: 20px;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -205,4 +290,92 @@ h1 {
 .isShowBtnHide {
   opacity: 0;
   transition: all 0.5s;
+}
+
+@media all and (max-width: 1024px) {
+  .container {
+    max-width: 890px;
+  }
+  .mainImg img {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  .mainImg img {
+    width: 350px;
+  }
+
+  .headerInner ul li + li {
+    margin-left: 20px;
+  }
+  .mainText h1 {
+    font-size: 30px;
+  }
+  .mainText h2 {
+    font-size: 35px;
+  }
+}
+
+@media all and (max-width: 426px) {
+  .container {
+    width: 400px;
+  }
+  .main {
+    margin-top: 90px;
+  }
+  .mainInner {
+    display: inline-block;
+    position: relative;
+  }
+  .mainImg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .mainImg img {
+    width: 320px;
+  }
+  .nav {
+    display: none !important;
+  }
+  .arrow {
+    display: none !important;
+  }
+  .mainText {
+    border: none;
+    text-align: center;
+  }
+  .mainText h1 {
+    font-size: 26px;
+    display: none;
+  }
+  .mobTitle {
+    display: block;
+  }
+  .mainText h2 {
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+  }
+  .projectsInner {
+    margin-top: 20px;
+  }
+  .projectsInner h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+  .programInner h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .hamburger-menu{
+    display: block;
+  }
 }
